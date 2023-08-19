@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://healed-mule-4810.6wr.cockroachlabs.cloud:26257/taskninja
+    username: taskninja
+    password: erT5Sbl2WCSHPGMVLQmoqQ
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  security:
+    csrf:
+      enabled: false
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .html
